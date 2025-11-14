@@ -1,0 +1,1 @@
+console.log("JS ok - Snack 2")
