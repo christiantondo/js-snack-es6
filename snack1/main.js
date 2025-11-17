@@ -29,19 +29,24 @@ const racingBicycles = [
     }
 ];
 
-// Creo un ciclo che analizza gli oggetti nell'array e stampo in console 
-// il loro peso associato al nome del brand per una maggiore chiarezza
+
 
 // Creo la variabile lightestBicycle per inserirci la bici più leggera una volta identificata
 let lightestBicycle = racingBicycles[0];
 
-// Ciclo per confrontare i pesi delle varie bici
+// Creo un ciclo che analizza gli oggetti nell'array e stampo in console 
+// il loro peso associato al nome del brand per una maggiore chiarezza
+
 for (let i = 0; i < racingBicycles.length; i++) {
     console.log(`La bici ${racingBicycles[i].brand} pesa:`, racingBicycles[i].weight);
     
+    // Ciclo per confrontare i pesi delle varie bici
     if (racingBicycles[i].weight < lightestBicycle.weight) {
         lightestBicycle = racingBicycles[i];
+        // Se la bici analizzata è più leggera, viene inserita nella variabile lightestBicycle
         console.log("Identificata una bici più leggera:", lightestBicycle.brand);
+
+        // Altrimenti il valore della variabile rimane invariato
     } else {
         console.log("Il confronto non ha identificato una bici più leggera, è ancora:", lightestBicycle.brand)
     }
