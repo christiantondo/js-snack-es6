@@ -25,12 +25,8 @@ const clubs = [
 const clubNames = []
 
 for (let i = 0; i < clubs.length; i++) {
-
-    const club = clubs[i];
-
-
-
+    clubs[i].points = (Math.floor(Math.random() * 99));
+    clubs[i].penalties = (Math.floor(Math.random() * 30));
+    console.log(clubs[i])
 }
 
-let pointsRandom = (Math.floor(Math.random() * 99));
-let penaltiesRandom = (Math.floor(Math.random() * 30));
