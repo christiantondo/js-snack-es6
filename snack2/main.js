@@ -22,6 +22,7 @@ const clubs = [
     }
 ];
 
+
 const clubNames = []
 
 for (let i = 0; i < clubs.length; i++) {
@@ -30,6 +31,6 @@ for (let i = 0; i < clubs.length; i++) {
     console.log(`La squadra ${clubs[i].name} ha chiuso la stagione con ${clubs[i].points} punti e ${clubs[i].penalties} falli subiti`);
 
     clubNames.push(clubs[i].name)
-    console.log("Le squadre all'interno dell'array sono:", clubNames)
 }
+console.log("Le squadre all'interno dell'array sono:", clubNames)
 
