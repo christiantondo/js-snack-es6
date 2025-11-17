@@ -34,5 +34,5 @@ const racingBicycles = [
 // Creo un ciclo che analizza gli oggetti nell'array e stampa in console il loro peso
 for (let i = 0; i < racingBicycles.length; i++) {
     const bicyclesWeight = (racingBicycles[i].weight);
-    console.log("Le bici nell'array pesano:", bicyclesWeight);
+    console.log("La bici ha un peso di:", bicyclesWeight);
 }
