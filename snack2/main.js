@@ -27,6 +27,9 @@ const clubNames = []
 for (let i = 0; i < clubs.length; i++) {
     clubs[i].points = (Math.floor(Math.random() * 99));
     clubs[i].penalties = (Math.floor(Math.random() * 30));
-    console.log(`La squadra ${clubs[i].name} ha chiuso la stagione con ${clubs[i].points} punti e ${clubs[i].penalties} falli subiti` )
+    console.log(`La squadra ${clubs[i].name} ha chiuso la stagione con ${clubs[i].points} punti e ${clubs[i].penalties} falli subiti`);
+
+    clubNames.push(clubs[i].name)
+    console.log("Le squadre all'interno dell'array sono:", clubNames)
 }
 
