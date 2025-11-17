@@ -31,8 +31,7 @@ const racingBicycles = [
     }
 ];
 
-// Creo un ciclo che analizza gli oggetti nell'array e stampa in console il loro peso
+// Creo un ciclo che analizza gli oggetti nell'array e stampa in console il loro peso associato al nome del brand per una maggiore chiarezza
 for (let i = 0; i < racingBicycles.length; i++) {
-    const bicyclesWeight = (racingBicycles[i].weight);
-    console.log("La bici ha un peso di:", bicyclesWeight);
+    console.log(`La bici ${racingBicycles[i].brand} pesa:`, racingBicycles[i].weight);
 }
