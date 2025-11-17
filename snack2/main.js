@@ -22,15 +22,18 @@ const clubs = [
     }
 ];
 
-
+// Array in cui inserire i nomi delle squadre
 const clubNames = []
 
+// Ciclo che genera punti e falli subiti per ogni squadra all'interno dell'array
 for (let i = 0; i < clubs.length; i++) {
     clubs[i].points = (Math.floor(Math.random() * 99));
     clubs[i].penalties = (Math.floor(Math.random() * 30));
     console.log(`La squadra ${clubs[i].name} ha chiuso la stagione con ${clubs[i].points} punti e ${clubs[i].penalties} falli subiti`);
 
+    // Inserisco i nomi delle squadre nell'array
     clubNames.push(clubs[i].name)
 }
+// Stampo in console l'array ora completo
 console.log("Le squadre all'interno dell'array sono:", clubNames)
 
